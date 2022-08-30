@@ -39,3 +39,18 @@
 //     number /= 10;
 // }
 //   Console.WriteLine(sum);
+
+//Задача 29 Напишите массив от мин до макс
+Console.WriteLine("Введите длину массива : ");
+int lenArray = int.Parse(Console.ReadLine());
+Console.WriteLine("minValue : ");
+int minValue = int.Parse(Console.ReadLine());
+Console.WriteLine("maxValue : ");
+int maxValue = int.Parse(Console.ReadLine());
+
+int[] randomArray = new int[lenArray];
+for (int i = 0; i < randomArray.Length; i++)
+{
+    randomArray[i] = new Random().Next(minValue,maxValue);
+    Console.Write(randomArray[i] + " ");
+}
